@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Newquay - Electric Beach Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall's Tourist guide </span>
+<div id="container">
+
+ <a id="hamburger-button" href="#hamburger-menu" class="header-button">&equiv;</a>
+
+<div id="hamburger-menu">
+<nav>
+
+        <a id="hamburger-button-close" class="header-button">X</a>
+
+    <ul>
+      <li>  <a href="index.html" > 
+      <br />Cornwall Tourist Guide Home</a></li>
+      
+      <li>  <a href="newquay.html" > 
+      <br />Newquay Menu</a></li>
+      
+      <li>  <a href="contact-form.html" ><br />
+        Contact Us Form</a></li>
+      </ul>
+      </nav>
+      
+  </div>
+  </header>
+<div class="animate-bottom">
+<h1> Electric Beach Festival </h1>
+
+ <div class="newquay"><img src="festival.jpg" /></div>
+<h2> Electric Beach Festival </h2>
+
+<div id="newquay-text">Electric Beach Festival will hit Great Western Beach, Newquay on Friday 16th - Saturday 17th June 2017. The two-day event combining live music, bellyboard competitions, fire shows and yoga is set to be one of the hottest beach parties to hit the Cornish coastline this summer. Thrilled to be welcoming a string of exciting acts to this ever-popular surf town, Electric Beach Festival organisers have announced Badly Drawn Boy and Cuban Brothers as official headliners for 2017. <br /> <br />
+
+Packing his trademark bobble hat, singer-songwriter Damon Gough, aka Badly Drawn Boy will be heading south to perform a selection of his favourite tracks on the golden sands of Great Western Beach on Saturday 17th June. Winning the Mercury Prize back in 2000 for his much-loved debut album, The Hour of Bewilderbeast, the Breightmet-born singer is certainly no stranger to the festival circuit. <br /> <br />
+
+Having attracted celebrity fans from Richard Branson to Elton John, The Cuban Brothers will join this year’s lineup for an undoubtedly dazzling blend of comedy, breakdancing, singing and high levels of energy. Whipping up a frenzy on Friday 16th June, this unique outfit are guaranteed to make party goers laugh, sing, shake and cry with joy. <br /> <br />
+Weekend tickets are currently on sale with prices starting from £27.50 (excl. booking fee). For further information please visit www.electricbeachfestival.co.uk </div> <br /> <br />
+<h2> Map </h2> <br /> <br />
+ <div id="map-container"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.415765, lng: -5.075996};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 17,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap">
+                </script>
+                
+                </div>
+<br />
+<br />
+
+<script src="script.js"></script>
+</body>
+</html>

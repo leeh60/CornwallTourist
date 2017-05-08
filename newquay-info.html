@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Newquay Info</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<header>
+<span class="title-header"> Cornwall's Tourist guide </span>
+<div id="container">
+
+ <a id="hamburger-button" href="#hamburger-menu" class="header-button">&equiv;</a>
+
+<div id="hamburger-menu">
+<nav>
+
+        <a id="hamburger-button-close" class="header-button">X</a>
+
+    <ul>
+      <li>  <a href="index.html" > 
+      <br />Cornwall Tourist Guide Home</a></li>
+      
+      <li>  <a href="newquay.html" > 
+      <br />Newquay Menu</a></li>
+      
+      <li>  <a href="contact-form.html" ><br />
+        Contact Us Form</a></li>
+      </ul>
+      </nav>
+      
+  </div>
+  </header>
+<div class="animate-bottom">
+
+<h1> Newquay </h1>
+<h2> Info on Newquay </h2>
+
+ <div class="newquay"><img src="newquay.jpg" alt="pic" /></div>
+ <h2> Info on Newquay </h2> <br /> <br />
+<div id="newquay-text"> Newquay on Cornwall’s Atlantic Coast -voted “one of the nation's favourite seaside towns” in the prestigious Which Holiday Survey, “best family holiday destination” by readers of COAST magazine and has one of the UK's top ten beaches by Trip Advisor. Newquay’s laid back charm is here for everyone to enjoy.
+
+Whether you’re looking for a contemporary self catering apartment, a high quality holiday park to bring your camper, caravan or tent, great value bed and breakfast or a top quality hotel and spa, Newquay has it all. </div> <br /> <br />
+
+<h2> Map </h2> <br /> <br />
+
+ <div id="map-container"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.414924, lng: -5.083417};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 15,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap" >
+                </script>
+
+</div>
+<br />
+<br />
+<script src="script.js"></script>
+</body>
+</html>

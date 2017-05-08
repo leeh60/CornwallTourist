@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Newquay Indian Summer Restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall's Tourist guide </span>
+<div id="container">
+
+ <a id="hamburger-button" href="#hamburger-menu" class="header-button">&equiv;</a>
+
+<div id="hamburger-menu">
+<nav>
+
+        <a id="hamburger-button-close" class="header-button">X</a>
+
+    <ul>
+      <li>  <a href="index.html" > 
+      <br />Cornwall Tourist Guide Home</a></li>
+      
+      <li>  <a href="newquay.html" > 
+      <br />Newquay Menu</a></li>
+      
+      <li>  <a href="contact-form.html" ><br />
+        Contact Us Form</a></li>
+      </ul>
+      </nav>
+      
+  </div>
+  </header>
+<div class="animate-bottom">
+<h1> Indian Summer - Restaurant </h1>
+
+ <div class="newquay"><img src="indian-summer.jpg" /></div>
+<h2> Indian Summer </h2>
+<div id="newquay-text"> Indian Summer restaurant is located in the heart of Newquay town centre, a minute's walk from the beach. A unique setting within modern and contemporary surroundings combining both exceptional new Indian fare as well as your favourite traditional dishes. <br /> <br />
+At Indian Summer, we pride ourselves on our mouth-watering dishes created exclusively by our award winning chef using only the finest quality ingredients. We have a huge variety of special offers available to make dining out even cheaper – including a large selection of deals. </div>
+
+<h2> Road Directions </h2>
+
+<div id="newquay-text">From the A30, take the A392 to Newquay until you reach Quintrell Downs roundabout (approx. 4 miles) take the second exit (straight on) heading towards Fistral Bay. Follow this road (still the A392) passing Hendra Caravan Park for 1 mile until you reach the Morrisons roundabout, take the first exit (straight on, Morrisons will be on your right), at the next roundabout take the second exit (right turn) still heading towards Fistral Bay. You are now entering Newquay, pass the Texaco garage on your right, at the next roundabout take the second exit (right turn). <br /> <br /> Proceed along this road (Trevemper Road) passing the boating lake on your left. At the next twin mini roundabout take the first exit (left) and proceed up the hill (Trenance Road). Over the brow of the hill at the traffic lights turn left, this is Mount Wise and is now two-way. Proceed along Mount Wise taking the third turning on your right onto Marcus Hill. Drive down Marcus Hill, Newquay Meadery is on your right side, just after the right turn (Seymour Avenue) and opposite Newquay Tourist Information Centre.</div>
+
+<h2> Opening Times </h2>
+<div id="newquay-text1"> 2017 - Opening 1 Jan 2017 - 31 Dec 2017 <br /> <br />
+Monday: 5.30pm - 11.30pm <br />
+Tuesday: 5.30pm - 11.30pm <br />
+Wednesday: 5.30pm - 11.30pm <br />
+Thursday: 5.30pm - 11.30pm <br />
+Friday: 5.30pm - 12am <br />
+Saturday: 5.30pm - 12am <br />
+Sunday: 5.30pm - 11.30pm </div> <br /> <br />
+<h2> Map </h2> <br /> <br />
+ <div id="map-container"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.413740, lng: -5.081341};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 19,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap">
+                </script>
+                
+                </div>
+<br />
+<br />
+
+<script src="script.js"></script>
+</body>
+</html>

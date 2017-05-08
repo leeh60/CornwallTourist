@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Newquay - Blue Reef Aquarium</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall's Tourist guide </span>
+<div id="container">
+
+ <a id="hamburger-button" href="#hamburger-menu" class="header-button">&equiv;</a>
+
+<div id="hamburger-menu">
+<nav>
+
+        <a id="hamburger-button-close" class="header-button">X</a>
+
+    <ul>
+      <li>  <a href="index.html" > 
+      <br />Cornwall Tourist Guide Home</a></li>
+      
+      <li>  <a href="newquay.html" > 
+      <br />Newquay Menu</a></li>
+      
+      <li>  <a href="contact-form.html" ><br />
+        Contact Us Form</a></li>
+      </ul>
+      </nav>
+      
+  </div>
+  </header>
+<div class="animate-bottom">
+<h1> Blue Reef Aquarium </h1>
+
+ <div class="newquay"><img src="blue-reef.jpg" /></div>
+<h2> Blue Reef Aquarium </h2>
+
+<div id="newquay-text">
+Blue Reef is part of an exciting new generation of aquarium attractions designed to inspire deeper understanding and appreciation of the natural world. Situated on Towan Beach in the centre of Newquay, opposite the famous island, the Newquay Blue Reef Aquarium is a stunning visit. <br /> <br />
+
+
+Be amazed by the local marine species from the Cornish coast to hundreds of tropical species in the gigantic ocean display complete with underwater tunnel. <br /> <br />
+
+We want to show you all the fantastic creatures that live in our seas and oceans. Our displays take you on an undersea tour; from the British coastline to faraway tropical reefs and lots more in between. <br /> <br />
+
+During your visit, you'll come face to face with incredible sea life with everything from giant crabs and lobsters to seahorses and tropical sharks and you'll get a chance to find out more about these creatures' amazing lives in over 40 naturally recreated displays. <br /> <br />
+
+Blue Reef is one of the UK's leading aquariums with a commitment to providing education about the marine environment but in a fun and entertaining way. </div> <br />
+
+  <h2> Opening times and Prices </h2>
+  
+  <div id="newquay-text1"> Opening times <br /> <br />
+  Open everyday from the 1st Jan until the 31st of December but Christmas Day <br /> 
+  Open 10am - 4pm (November - February) and 10am - 5pm (March - October) <br /> <br />
+
+  Ticket Prices <br />
+  Adults - £9.68 <br />
+  Junior - £7.43 <br />
+  Concession - £8.78 <br />
+  Family (2 Adults and 2 Juniors) - £33.20 <br />
+  Under 3's are free </div> <br /> <br />
+  <h2> Map </h2> <br /> <br />
+   <div id="map-container"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.414788, lng: -5.083720};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 15,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap" >
+                </script>
+
+</div>
+<br />
+<br />
+
+<script src="script.js"></script>
+</body>
+</html>

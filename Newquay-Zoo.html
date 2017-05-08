@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Newquay Zoo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall's Tourist guide </span>
+<div id="container">
+
+ <a id="hamburger-button" href="#hamburger-menu" class="header-button">&equiv;</a>
+
+<div id="hamburger-menu">
+<nav>
+
+        <a id="hamburger-button-close" class="header-button">X</a>
+
+    <ul>
+      <li>  <a href="index.html" > 
+      <br />Cornwall Tourist Guide Home</a></li>
+      
+      <li>  <a href="newquay.html" > 
+      <br />Newquay Menu</a></li>
+      
+      <li>  <a href="contact-form.html" ><br />
+        Contact Us Form</a></li>
+      </ul>
+      </nav>
+      
+  </div>
+  </header>
+<div class="animate-bottom">
+<h1> Newquay Zoo </h1>
+
+ <div class="newquay"><img src="newquay-zoo.jpg" /></div>
+<h2> Newquay Zoo </h2>
+
+<div id="newquay-text"> Newquay Zoo is set within 13 acres of lush tropical gardens just a short stroll from Newquay town centre.　<br /> <br />
+
+ During your visit you can get close to over 1,000　of the world’s rarest and endangered animals whilst also learning about the conservation work carried out by the zoo.　<br /> <br />
+ 
+  Watch the lions devour their lunch and then adventure into the Tropical House (if you're brave enough) and meet some of the more unusual residents including a sloth! If that isn’t enough, they have activity trails, face painting, a children’s play area, a Tarzan trail　and Dragon maze to keep the little ones busy. <br /> <br /> 
+  
+  A comprehensive feed and talk programme runs throughout the day presented by the on-site education team and Animal Experiences offer visitors the opportunity to get even closer to some of the Zoo’s residents including the lemurs, penguins and meerkats (booking is advised). <br /> <br />
+  
+  On entry to the Zoo visitors are offered a 7-day pass included in the price of their ticket, which allows unlimited entries for 7 days- a great way to enjoy the zoo more than once during your stay in Newquay. <br /> <br />
+  
+  The Zoo also holds annual events throughout the year, please check their website for details.</div> <br /> <br />
+  
+  <h2> Opening times and Prices </h2>
+  
+  <div id="newquay-text1"> Opening times <br /> <br />
+  Open from the 1st Jan until the 31st December apart from Christmas Day
+  <br />
+  Open from Monday to Sunday 10 - 5 <br /> <br />
+  Ticket Prices <br />
+  Adults - £13.60 <br />
+  children (3 - 15) - £10.20 <br />
+  Concession - £11.55 <br />
+  Saver Ticket (2 Adults and 2 Children) - £42.60 <br />
+  Under 3's are free </div> <br /> <br />
+  <h2> Map </h2> <br /> <br />
+   <div id="map-container"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.411704, lng: -5.068991};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 15,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap" >
+                </script>
+
+</div>
+<br />
+<br />
+
+<script src="script.js"></script>
+</body>
+</html>

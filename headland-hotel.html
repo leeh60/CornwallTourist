@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Newquay - Headland Hotel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall's Tourist guide </span>
+<div id="container">
+
+ <a id="hamburger-button" href="#hamburger-menu" class="header-button">&equiv;</a>
+
+<div id="hamburger-menu">
+<nav>
+
+        <a id="hamburger-button-close" class="header-button">X</a>
+
+    <ul>
+      <li>  <a href="index.html" > 
+      <br />Cornwall Tourist Guide Home</a></li>
+      
+      <li>  <a href="newquay.html" > 
+      <br />Newquay Menu</a></li>
+      
+      <li>  <a href="contact-form.html" ><br />
+        Contact Us Form</a></li>
+      </ul>
+      </nav>
+      
+  </div>
+  </header>
+<div class="animate-bottom">
+<h1> Headland Hotel and Spa </h1>
+
+ <div class="newquay"><img src="newquay-hotel.jpg" alt="headland" /></div>
+<h2> Headland Hotel and Spa </h2>
+
+<div id="newquay-text">
+Arrive through the iconic vintage gates, and you’ll discover a cliff top Hotel with everything you need, all in one place. Rest, recharge and revel in chilled-out luxury. And when (if) you’re ready to go out and explore, you’re right in the heart of it all, the best waves, walks and beaches are just steps away. <br /> <br />
+
+The award winning Headland Hotel has 96 beautiful rooms in a variety of styles, from our most luxurious traditional ‘Best Doubles’ and modern ‘Fistral Suites’ to our standard, well-appointed bedrooms. The small personal touches, comfortable surroundings and our warm friendly service will ensure that you wake refreshed and ready for our full Cornish breakfast in The Restaurant <br /> <br />
+
+There are two dining experiences: the elegant Restaurant and the contemporary Terrace. Wine, dine and relax whilst feasting on locally-sourced and expertly-prepared meals. A pre-dinner drink can be enjoyed in the relaxed hubbub of The Bar, with its warm hues and comfy sofas, the lounge bar's relaxing ambience will suit your mood, whether you fancy a cocktail or just a cold beer after a day on the beach. <br /> <br />
+
+When you’ve explored the great outdoors, let us introduce the great indoors. The 'Gold' award-winning Headland Spa is Cornwall's first 'Five Bubble' rated spa hotel and offers relaxing spa breaks and treatments. The luxurious leisure area is available for you to use throughout your stay, so enjoy our heated pool with a jet stream and bubble seats, Swedish sauna, Cornish salt steam room, aromatherapy showers and hot tub! <br />
+ </div> <br />
+
+  <h2> Opening times and Prices </h2>
+  
+  <div id="newquay-text1"> Opening times <br /> <br />
+  Open everyday from the 1st Jan until the 31st of December but Christmas Day <br /> <br />
+
+  Prices <br />
+  Prices start from £140 per room with Breakfast included. </div> <br /> <br />
+  <h2> Map </h2> <br /> <br />
+ <div id="map-container"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.420428, lng: -5.096889};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 15,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap">
+                </script>
+                
+                </div>
+<br />
+<br />
+
+<script src="script.js"></script>
+</body>
+</html>
