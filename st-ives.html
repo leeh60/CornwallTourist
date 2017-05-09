@@ -29,12 +29,37 @@
 <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
+<body onload="myFunction()">
 <header>
-<span class="hamburger-icon">
-</span>
 <span class="title-header"> Cornwall's Tourist guide </span>
-</header>
+
+<div id="container">
+
+ <a id="hamburger-button" href="#hamburger-menu" class="header-button">&equiv;</a>
+
+<div id="hamburger-menu">
+<nav>
+
+        <a id="hamburger-button-close" class="header-button">X</a>
+
+    <ul>
+      <li>  <a href="index.html" > 
+      <br />Cornwall Tourist Guide Home</a></li>
+      
+      <li>  <a href="newquay.html" > 
+      <br />Newquay Menu</a></li>
+      
+      <li>  <a href="contact-form.html" ><br />
+        Contact Us Form</a></li>
+      </ul>
+      </nav>
+      
+  </div>
+  </header>
+  
+<div id="loader"></div>
+
+<div id="myDiv" class="animate-bottom">
 
 <h1> St Ives </h1>
 <h2> Please click one of the options below to find out more about St Ives </h2>
@@ -49,7 +74,7 @@
 <div id="text1">Attractions in St Ives </div></a></div>
 <div class="Container5"> <a href="newquay-accomodation.html"><img src="st-ives-hotel.jpg" alt="" />
 <div id="text1">Accomodation in St Ives </div></a></div>
-
+</div>
 
 <script src="script.js"></script>
 </body>
